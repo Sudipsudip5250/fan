@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    padding: 50px;
+    border-radius: 50%;
+    animation: fananim linear infinite;
+}
+
+@keyframes fananim {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
