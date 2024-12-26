@@ -16,8 +16,49 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 10px 20px;
     border-radius: 20px;
     background-color: green;
+    /* z-index: -2; */
+}
+
+img{
+    padding: 5px;
+    border-radius: 50%;
+    animation: fananim linear infinite;
+    z-index: 2;
+    height: 200px;
+    width: 200px;
+    animation-duration: 0 s;
+}
+
+@keyframes fananim {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#line {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    
+    width: 26%;
+    height: 5px;
+    padding-left: 20px;
+    background-color: white;
+    margin: 20px 0;
+    transform: rotate(90deg) translateX(-3px);
+    z-index: 1;
+}
+
+#buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: azure;
 }
 
 button {
@@ -29,15 +70,5 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-img{
-    padding: 50px;
-    border-radius: 50%;
-    animation: fananim linear infinite;
-}
-
-@keyframes fananim {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    z-index: 2;
 }
