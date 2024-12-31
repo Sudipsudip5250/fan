@@ -45,10 +45,10 @@ function adjustSpeed() {
 function myfanon() {
     if (!isRunning) {
         isRunning = true;
-        targetSpeed = 0.8;
+        targetSpeed = 0.6;
         adjustSpeed();
     } else {
-        targetSpeed = 0.8;
+        targetSpeed = 0.6;
         adjustSpeed();
     }
 }
@@ -57,7 +57,7 @@ function myfanon() {
 
 function myfan1() {
     if (isRunning) {
-        targetSpeed = 0.6;
+        targetSpeed = 0.5;
         adjustSpeed();
     } else {
         myfanon();
@@ -67,7 +67,7 @@ function myfan1() {
 
 function myfan2() {
     if (isRunning) {
-        targetSpeed = 0.3;
+        targetSpeed = 0.35;
         adjustSpeed();
     } else {
         myfanon();
